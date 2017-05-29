@@ -16,7 +16,8 @@ repositories {
 dependencies {
   compile "org.jetbrains.kotlin:kotlin-stdlib"
   compile 'org.slf4j:slf4j-api:1.7.22'
-  compile "org.jetbrains.ktor:ktor-core:0.3.2"
+  compile "org.jetbrains.ktor:ktor-netty:0.3.2"
+  compile "com.google.code.gson:gson:2.8.0"
   testCompile 'io.kotlintest:kotlintest:2.0.2'
 }
 
