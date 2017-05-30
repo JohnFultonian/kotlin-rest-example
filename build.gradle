@@ -5,18 +5,16 @@ plugins {
 apply plugin: 'kotlin'
 apply plugin: 'application'
 
-mainClassName = "com.tablesagas.TestKt"
+mainClassName = "com.tablesagas.AppKt"
 
 repositories {
   jcenter()
-  maven { url "https://dl.bintray.com/kotlin/kotlinx" }
-  maven { url "https://dl.bintray.com/kotlin/ktor" }
 }
 
 dependencies {
+  compile 'io.dropwizard:dropwizard-core:1.1.1'
   compile "org.jetbrains.kotlin:kotlin-stdlib"
   compile 'org.slf4j:slf4j-api:1.7.22'
-  compile "org.jetbrains.ktor:ktor-netty:0.3.2"
   compile "com.google.code.gson:gson:2.8.0"
   testCompile 'io.kotlintest:kotlintest:2.0.2'
 }
