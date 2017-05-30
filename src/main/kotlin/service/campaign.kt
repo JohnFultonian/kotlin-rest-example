@@ -2,6 +2,8 @@ package com.tablesagas.service
 
 import com.tablesagas.model.Campaign
 
+import javax.ws.rs.NotFoundException
+
 val items = listOf(
         Campaign(0, "The first campaign", 12),
         Campaign(1, "The second campaign", 9),
@@ -10,4 +12,6 @@ val items = listOf(
 
 val default = Campaign(-1, "default", 0)
 
-fun lookupCampaign(id: Int) = items.find { it.id == id } ?: default
+fun lookup(id: Int) = items.find { it.id == id } ?: throw NotFoundException()
+
+fun all() = items
