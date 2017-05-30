@@ -13,3 +13,14 @@ Just [Docker](https://www.docker.com)
 
 ### Build
 `make build`
+
+## Usage
+Doesn't do much right now, but you can
+
+`curl http://localhost:8080/campaign`
+
+and
+
+`curl http://localhost:8080/campaign/1`
+
+if you `make run`
