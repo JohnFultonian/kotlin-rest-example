@@ -13,9 +13,7 @@ class App() : Application<Config>() {
   override fun run(configuration: Config, environment: Environment) {}
 }
 
-fun main(args: Array<String>) {
-  when {
-    args.isEmpty()  -> App().run("server")
-    else            -> App().run(args.first())
-  }
+fun main(args: Array<String>) = when {
+  args.isEmpty()  -> App().run("server")
+  else            -> App().run(args.first())
 }
