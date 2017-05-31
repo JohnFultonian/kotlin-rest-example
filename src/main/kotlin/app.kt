@@ -18,5 +18,5 @@ class App() : Application<Config>() {
 
 fun main(args: Array<String>) = when {
   args.isEmpty()  -> App().run("server")
-  else            -> App().run(args.first())
+  else            -> App().run(*args)
 }
